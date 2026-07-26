@@ -1,0 +1,53 @@
+:root {
+  /* Color — deep ink navy + aged brass, evoking a chancery study rather than a startup */
+  --ink-950: #0a1420;
+  --ink-900: #0e1b2c;
+  --ink-800: #182437;
+  --ink-700: #24334a;
+  --paper-100: #f6f2e9;
+  --paper-200: #ece5d5;
+  --brass-300: #d8bd8b;
+  --brass-500: #b4915b;
+  --brass-700: #8a6c3f;
+  --slate-400: #8c97a8;
+  --slate-300: #aeb7c4;
+  --line-on-dark: rgba(180, 145, 91, 0.28);
+  --line-on-light: rgba(14, 27, 44, 0.12);
+  --success-600: #3fa66e;
+
+  /* Type */
+  --font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+
+  --step--1: clamp(0.8rem, 0.78rem + 0.1vw, 0.875rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --step-1: clamp(1.25rem, 1.18rem + 0.35vw, 1.5rem);
+  --step-2: clamp(1.6rem, 1.45rem + 0.75vw, 2.1rem);
+  --step-3: clamp(2.1rem, 1.8rem + 1.5vw, 3rem);
+  --step-4: clamp(2.6rem, 2.1rem + 2.5vw, 4.4rem);
+
+  /* Spacing (8px base) */
+  --sp-1: 0.5rem;
+  --sp-2: 0.75rem;
+  --sp-3: 1rem;
+  --sp-4: 1.5rem;
+  --sp-5: 2rem;
+  --sp-6: 3rem;
+  --sp-7: 4.5rem;
+  --sp-8: 6.5rem;
+
+  /* Shape */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 20px 40px -24px rgba(10, 20, 32, 0.45);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --content-max: 1180px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root { color-scheme: dark; }
+}

@@ -1,0 +1,16 @@
+Coloque aqui o vídeo institucional do advogado com os nomes:
+
+  hero.mp4   (obrigatório — H.264, 1920x1080 ou 1280x720, até ~15s em loop)
+  hero.webm  (opcional, mas recomendado para arquivos menores)
+
+Dicas:
+- Comprima o vídeo (HandBrake, ffmpeg) para ficar abaixo de 5-8MB, já que ele
+  toca em loop assim que a página carrega.
+- Um plano fechado do advogado falando/caminhando pelo escritório, ou um
+  detalhe (mãos assinando, martelo, estante de livros) funciona melhor do
+  que um vídeo com muito movimento de câmera.
+- Enquanto o arquivo não existir, o site mostra automaticamente a imagem
+  poster.svg no lugar do vídeo — nada quebra.
+
+Exemplo de compressão com ffmpeg:
+  ffmpeg -i original.mov -vf scale=1920:-2 -an -c:v libx264 -crf 26 -preset slow hero.mp4

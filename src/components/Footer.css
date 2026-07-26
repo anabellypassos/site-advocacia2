@@ -1,0 +1,38 @@
+.footer {
+  background: var(--ink-950);
+  color: var(--slate-400);
+  padding-block: var(--sp-5);
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.footer__mark {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: var(--font-display);
+  color: var(--paper-200);
+}
+
+.footer__oab { color: var(--brass-500); }
+
+.footer__legal {
+  font-size: var(--step--1);
+  max-width: 60ch;
+}
+
+@media (max-width: 767px) {
+  .footer__row { align-items: center; text-align: center; }
+}
+
+@media (min-width: 768px) {
+  .footer__row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
